@@ -21,7 +21,7 @@ services:
       context: front-end
       dockerfile: Dockerfile
     ports:
-      - 3000:3000
+      - 8000:8000
     networks:
       - hackathon
     depends_on:
