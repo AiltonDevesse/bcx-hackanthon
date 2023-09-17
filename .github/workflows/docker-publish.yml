@@ -26,10 +26,10 @@ jobs:
 
       - name: Build Docker image (Laravel)
         run: |
-          docker build --no-cache -t ailtondevesse/hackathon:${{ steps.tag.outputs.TIMESTAMP_TAG }} .
+          docker build --no-cache -t ailtondevesse/hackathon-backend:${{ steps.tag.outputs.TIMESTAMP_TAG }} ./back-end
           
       - name: Docker push images
         run: |
-          docker push ailtondevesse/hackathon:${{ steps.tag.outputs.TIMESTAMP_TAG }}
+          docker push ailtondevesse/hackathon-backend:${{ steps.tag.outputs.TIMESTAMP_TAG }}
 
           
