@@ -1,7 +1,0 @@
-myconfig.json
-.vscode/
-**/__pycache__
-test_curl.sh
-venv
-embedding_model
-__pycache__
