@@ -22,10 +22,10 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build ./back-end -t ailtondevesse/hackathonbackend:main }}
+          docker build ./back-end -t ailtondevesse/hackathonbackend:main
           
       - name: Docker push images
         run: |
-          docker push ailtondevesse/hackathonbackend:main }}
+          docker push ailtondevesse/hackathonbackend:main
 
           
