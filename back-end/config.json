@@ -1,18 +1,18 @@
 {
   "embedding": {
-    "model_dir": "/code/",
+    "model_dir": "",
     "embedding_model": "SGPT-125M-weightedmean-nli-bitfit",
     "embedding_dimension": 768
   },
   "EASCfg": {
-    "url": "http://xxxxx.pai-eas.aliyuncs.com/api/predict/llama2_model",
-    "token": "xxxxxx"
+    "url": "http://5375294514214931.eu-central-1.pai-eas.aliyuncs.com/api/predict/devgang",
+    "token": "ZjM5NjBmZDZkNzY4YzY2NTU1MDVkYTU0ZjVkZTdiODc0ZDY4Yjk2NQ=="
   },
   "ADBCfg": {
-    "PG_HOST": "gp.xxxxx.rds.aliyuncs.com",
-    "PG_DATABASE": "database name, usually it's user name",
-    "PG_USER": "pg_user",
-    "PG_PASSWORD": "password"
+    "PG_HOST": "gp-4xo717q38g4m563sv-master.gpdbmaster.germany.rds.aliyuncs.com",
+    "PG_DATABASE": "academy",
+    "PG_USER": "academy",
+    "PG_PASSWORD": "Bitcoin@12345"
   },
   "create_docs":{
     "chunk_size": 200,

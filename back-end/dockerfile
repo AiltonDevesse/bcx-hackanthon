@@ -1,8 +1,27 @@
-FROM python:3-alpine3.15
+FROM python:3.11.5
+#3.9.5
+#Image python:3.8.3-slim also works   
+# Image python:3.9.5-slim-buster also works
 
+RUN apt-get update \
+    && apt-get -y install libpq-dev gcc \
+    && pip install psycopg2 psycopg2cffi
+
+#python-dev
+# Install PostgreSQL development headers and Python development headers
+#RUN apk add --no-cache postgresql-dev
+
+RUN apt-get -y install postgresql python-dev-is-python3
+
+#RUN apt-get install postgresql python-dev-is-python3 postgresql-dev
+
+#python3-dev
 WORKDIR /var/www/html/back-end
 
 COPY . /var/www/html/back-end
+
+# Install setuptools first
+RUN pip install --upgrade setuptools
 
 RUN pip install -r requirements.txt
 

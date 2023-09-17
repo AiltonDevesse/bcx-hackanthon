@@ -13,19 +13,19 @@ services:
     networks:
       - hackathon
 
-  front-end:
-    container_name: front-end
-    restart: unless-stopped
-    image: hack-front-end
-    build:
-      context: front-end
-      dockerfile: Dockerfile
-    ports:
-      - 8000:8000
-    networks:
-      - hackathon
-    depends_on:
-      - back-end
+  # front-end:
+  #   container_name: front-end
+  #   restart: unless-stopped
+  #   image: hack-front-end
+  #   build:
+  #     context: front-end
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - 8000:8000
+  #   networks:
+  #     - hackathon
+  #   depends_on:
+  #     - back-end
 
 networks:
   hackathon:

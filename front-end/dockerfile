@@ -1,8 +1,8 @@
 FROM python:3-alpine3.15
 
-WORKDIR /var/www/html/back-end
+WORKDIR /var/www/html/front-end
 
-COPY . /var/www/html/back-end
+COPY . /var/www/html/front-end
 
 RUN pip install -r requirements.txt
 
