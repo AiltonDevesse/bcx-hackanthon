@@ -5,8 +5,8 @@
     "embedding_dimension": 768
   },
   "EASCfg": {
-    "url": "http://5375294514214931.eu-central-1.pai-eas.aliyuncs.com/api/predict/devgang",
-    "token": "ZjM5NjBmZDZkNzY4YzY2NTU1MDVkYTU0ZjVkZTdiODc0ZDY4Yjk2NQ=="
+    "url": "http://devgang.5375294514214931.eu-central-1.pai-eas.aliyuncs.com/",
+    "token": "NzcyM2EzZGRjZDQ2OGY1Y2IwYjhlMGE1MzM4MDRmYWFkYjllODJmZQ=="
   },
   "ADBCfg": {
     "PG_HOST": "gp-4xo717q38g4m563sv-master.gpdbmaster.germany.rds.aliyuncs.com",
